@@ -36,4 +36,11 @@ public class LionTest {
                 .thenReturn(List.of("Животные", "Птицы", "Рыба"));
         Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), lion.getFood());
     }
+
+    @Test(expected = Exception.class)
+    public void createLion() throws Exception{
+        new Lion(null, feline);
+    }
+
+
 }
