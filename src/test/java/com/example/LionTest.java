@@ -8,7 +8,7 @@ import org.mockito.Mockito;
 
 import org.mockito.junit.MockitoJUnitRunner;
 import java.util.List;
-import static org.junit.Assert.*;
+
 
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest {
@@ -41,6 +41,5 @@ public class LionTest {
     public void createLion() throws Exception{
         new Lion(null, feline);
     }
-
 
 }
